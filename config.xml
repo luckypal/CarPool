@@ -20,6 +20,7 @@
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyDAxopl1Aak_YJJ56_pfVfbnVPYlwul7YE" />
+    <preference name="GOOGLE_MAPS_IOS_API_KEY" value="AIzaSyA__ZWTAKhtPB4g8pBedSWM-vizF8BWRQU" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -101,6 +102,7 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1" />
     <plugin name="cordova-plugin-googlemaps" spec="^2.5.3">
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDAxopl1Aak_YJJ56_pfVfbnVPYlwul7YE" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyA__ZWTAKhtPB4g8pBedSWM-vizF8BWRQU" />
         <variable name="PLAY_SERVICES_VERSION" value="15.0.1" />
         <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
     </plugin>

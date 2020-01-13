@@ -82,6 +82,7 @@
       "cordova-plugin-geolocation": {},
       "cordova-plugin-googlemaps": {
         "API_KEY_FOR_ANDROID": "AIzaSyDAxopl1Aak_YJJ56_pfVfbnVPYlwul7YE",
+        "API_KEY_FOR_IOS": "AIzaSyA__ZWTAKhtPB4g8pBedSWM-vizF8BWRQU",
         "PLAY_SERVICES_VERSION": "15.0.1",
         "ANDROID_SUPPORT_V4_VERSION": "27.+",
         "LOCATION_WHEN_IN_USE_DESCRIPTION": "This app wants to get your location while this app runs only.",
