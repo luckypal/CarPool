@@ -47,8 +47,7 @@ export class FindridePage implements OnInit {
     if (this.service.dateTime) {
       setTimeout(() => {
         this.service.dateForFindride.subscribe(filter => {
-          const date = new Date(filter);
-          this.date = date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
+          this.date = filter.replace("-", "/").replace("-", "/");
         });
         this.service.timeForFindride.subscribe(filter => {
           const date = new Date(filter);
