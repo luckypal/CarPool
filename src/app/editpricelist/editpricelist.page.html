@@ -25,7 +25,7 @@
           </ion-segment-button>
 
           <ion-input padding-horizontal class="textUnits" [(ngModel)]="priceValue[i]"
-            placeholder={{priceChart.placeholder}} value=" ₹{{priceChart.price}}.00" readonly></ion-input>
+            placeholder={{priceChart.placeholder}} value=" £{{priceChart.price}}.00" readonly></ion-input>
 
           <ion-segment-button mode="md" no-padding color="undefined" (click)="updateCart('add',i)" class="segmentBtn"
             [disabled]="priceChart.price > 300 ">

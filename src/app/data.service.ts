@@ -1532,7 +1532,7 @@ export class DataService {
     'image': '../../assets/image/mini.png',
     'label2': 'Benar Road, Dadi Ka Phatak,',
     'text': '10/13/17 at 20:26',
-    'text2': '325 Rs.',
+    'text2': '325 GBP.',
     'head': 'Maruti Suzuki alto(Sedan)',
   },
   {
@@ -1542,7 +1542,7 @@ export class DataService {
     'image': '../../assets/image/mini.png',
     'label2': 'Benar Road, Dadi Ka Phatak,',
     'text': '10/13/17 at 20:26',
-    'text2': '325 Rs.',
+    'text2': '325 GBP.',
     'head': 'Maruti Suzuki alto(Sedan)',
   },
   {
@@ -1552,7 +1552,7 @@ export class DataService {
     'image': '../../assets/image/mini.png',
     'label2': 'Benar Road, Dadi Ka Phatak,',
     'text': '10/13/17 at 20:26',
-    'text2': '325 Rs.',
+    'text2': '325 GBP.',
     'head': 'Maruti Suzuki alto(Sedan)',
   },
   {
@@ -1562,7 +1562,7 @@ export class DataService {
     'image': '../../assets/image/mini.png',
     'label2': 'Benar Road, Dadi Ka Phatak,',
     'text': '10/13/17 at 20:26',
-    'text2': '325 Rs.',
+    'text2': '325 GBP.',
     'head': 'Maruti Suzuki alto(Sedan)',
   },
   {
@@ -1572,7 +1572,7 @@ export class DataService {
     'image': '../../assets/image/mini.png',
     'label2': 'Benar Road, Dadi Ka Phatak,',
     'text': '10/13/17 at 20:26',
-    'text2': '325 Rs.',
+    'text2': '325 GBP.',
     'head': 'Maruti Suzuki alto(Sedan)',
   },
   {
@@ -1582,7 +1582,7 @@ export class DataService {
     'image': '../../assets/image/mini.png',
     'label2': 'Benar Road, Dadi Ka Phatak,',
     'text': '10/13/17 at 20:26',
-    'text2': '325 Rs.',
+    'text2': '325 GBP.',
     'head': 'Maruti Suzuki alto(Sedan)',
   },
   {
@@ -1592,7 +1592,7 @@ export class DataService {
     'image': '../../assets/image/mini.png',
     'label2': 'Benar Road, Dadi Ka Phatak,',
     'text': '10/13/17 at 20:26',
-    'text2': '325 Rs.',
+    'text2': '325 GBP.',
     'head': 'Maruti Suzuki alto(Sedan)',
   },
   {
@@ -1602,7 +1602,7 @@ export class DataService {
     'image': '../../assets/image/mini.png',
     'label2': 'Benar Road, Dadi Ka Phatak,',
     'text': '10/13/17 at 20:26',
-    'text2': '325 Rs.',
+    'text2': '325 GBP.',
     'head': 'Maruti Suzuki alto(Sedan)',
   }
   ];

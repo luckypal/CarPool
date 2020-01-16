@@ -31,7 +31,12 @@ export class FindridePage implements OnInit {
   constructor(public service: DataService, public modalCtrl: ModalController, public ngZone: NgZone, public route: Router, public alertController: AlertController) {
     this.pickup = true;
     const today = new Date();
-    const time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+
+    var ampm = today.getHours() >= 12 ? 'pm' : 'am';
+    var hours = today.getHours() % 12;
+    hours = hours ? hours : 12;
+    const time = `${hours}:${today.getMinutes()} ${ampm}`;
+    // const time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
     this.rightTime = time;
   }
 
@@ -42,10 +47,15 @@ export class FindridePage implements OnInit {
     if (this.service.dateTime) {
       setTimeout(() => {
         this.service.dateForFindride.subscribe(filter => {
-          this.date = filter;
+          const date = new Date(filter);
+          this.date = date.getDay() + "/" + date.getMonth() + "/" + date.getFullYear();
         });
         this.service.timeForFindride.subscribe(filter => {
-          this.time = filter;
+          const date = new Date(filter);
+          var ampm = date.getHours() >= 12 ? 'pm' : 'am';
+          var hours = date.getHours() % 12;
+          hours = hours ? hours : 12;
+          this.time = `${hours}:${date.getMinutes()} ${ampm}`;
         });
       }, 2000);
     }
