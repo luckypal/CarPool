@@ -54,19 +54,19 @@ export class EditpricelistPage implements OnInit {
       pickup: this.pickSub,
       destination: this.desSub,
       model: 'sourceTodest',
-      placeholder: '₹ 250.00',
+      placeholder: '£ 250.00',
       price: 250.00
     }, {
       pickup: this.pickSub,
       destination: this.stopOverLoc,
       model: 'sourceTostopover',
-      placeholder: '₹ 150.00',
+      placeholder: '£ 150.00',
       price: 150.00
     }, {
       pickup: this.stopOverLoc,
       destination: this.desSub,
       model: 'stopoverTodest',
-      placeholder: '₹ 100.00',
+      placeholder: '£ 100.00',
       price: 100.00
     },
     ];
