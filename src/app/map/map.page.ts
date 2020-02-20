@@ -106,8 +106,8 @@ export class MapPage implements OnInit {
     } else if (this.comingFrom === 'drop') {
       this.service.changefilterDestination(this.pickupLat, this.pickupLng, this.address);
 
-      this.route.navigate(['stopover']);
-
+      // this.route.navigate(['stopover']);
+      this.route.navigate(['direction']);
     }
   }
 }
