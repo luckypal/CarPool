@@ -8,6 +8,7 @@
  */import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { ActivatedRoute, Route, Router } from '@angular/router';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-ridedetails',
@@ -32,7 +33,7 @@ export class RidedetailsPage implements OnInit {
       this.date = filter;
     });
     this.service.timeForFindride.subscribe(filter => {
-      this.time = filter;
+      this.time = moment(filter).format('HH:mm');
     });
     this.actvroute.params.subscribe(params => {
       this.rideData = params;
@@ -43,6 +44,7 @@ export class RidedetailsPage implements OnInit {
   }
   goforSeats() {
     this.service.totalFare = this.rideData.cost;
-    this.route.navigate(['totalpassengers', { value: 'ticketBook' }]);
+    // this.route.navigate(['totalpassengers', { value: 'ticketBook' }]);
+    this.route.navigate(['checkbooking']);
   }
 }

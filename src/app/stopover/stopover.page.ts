@@ -16,6 +16,7 @@ import { ModalController } from '@ionic/angular';
   templateUrl: './stopover.page.html',
   styleUrls: ['./stopover.page.scss'],
 })
+//Unused.
 export class StopoverPage implements OnInit {
   lat: any;
   lng: any;
@@ -55,7 +56,7 @@ export class StopoverPage implements OnInit {
   }
 
   goforStopoversRouteMap() {
-    this.route.navigate(['direction']);
+    this.route.navigate(['direction']);   //Unused.
 
   }
 }

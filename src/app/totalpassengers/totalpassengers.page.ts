@@ -14,6 +14,7 @@ import { DataService } from '../data.service';
   templateUrl: './totalpassengers.page.html',
   styleUrls: ['./totalpassengers.page.scss'],
 })
+//Unused
 export class TotalpassengersPage implements OnInit {
   headerText = 'How many passengers can you take?';
   headerTextticketBook = 'How many passengers would you ride?';
@@ -43,11 +44,11 @@ export class TotalpassengersPage implements OnInit {
   gotoDrop(total) {
     if (this.comingFrom === 'ticketBook') {
       this.service.totalpassengerCount = total;
-      this.route.navigate(['checkbooking']);
+      this.route.navigate(['checkbooking']);  //Unused
     } else {
       this.total_Passenger = total;
       this.service.planPassenger(this.total_Passenger);
-      this.route.navigate(['bookinstantly']);
+      this.route.navigate(['bookinstantly']); //Unused
     }
   }
 }

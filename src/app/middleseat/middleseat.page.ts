@@ -21,6 +21,7 @@ export class MiddleseatPage implements OnInit {
   ngOnInit() {
   }
   gotoSelectSeats() {
-    this.route.navigate(['totalpassengers', { value: 'direct' }]);
+    // this.route.navigate(['totalpassengers', { value: 'direct' }]);
+    this.route.navigate(['bookinstantly']);
   }
 }

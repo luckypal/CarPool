@@ -9,6 +9,7 @@
 import { DataService } from '../data.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-checkbooking',
@@ -37,7 +38,7 @@ export class CheckbookingPage implements OnInit {
       this.date = filter;
     });
     this.service.timeForFindride.subscribe(filter => {
-      this.time = filter;
+      this.time = moment(filter).format('HH:mm');
     });
 
     this.actvRoute.params.subscribe(params => {

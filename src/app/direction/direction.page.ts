@@ -15,6 +15,7 @@ import { Router } from '@angular/router';
   templateUrl: './direction.page.html',
   styleUrls: ['./direction.page.scss'],
 })
+//Unused
 export class DirectionPage implements OnInit {
 
   constructor(public service: DataService, public route: Router) {
@@ -85,7 +86,7 @@ export class DirectionPage implements OnInit {
     });
   }
   goforDate() {
-    this.route.navigate(['calender', { value: 'oneway' }]);
+    this.route.navigate(['calender', { value: 'oneway' }]);   //Unused
   }
 }
 interface Marker {

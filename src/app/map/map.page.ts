@@ -107,7 +107,7 @@ export class MapPage implements OnInit {
       this.service.changefilterDestination(this.pickupLat, this.pickupLng, this.address);
 
       // this.route.navigate(['stopover']);
-      this.route.navigate(['direction']);
+      this.route.navigate(['calender', { value: 'oneway' }]);
     }
   }
 }
