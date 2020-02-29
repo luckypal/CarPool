@@ -27,7 +27,8 @@ export class SelecttimePage implements OnInit {
   gotoDrop(timeSelected) {
     this.time_selected = timeSelected;
     this.service.planTime(this.time_selected);
-    this.route.navigate(['middleseat']);
+    // this.route.navigate(['middleseat']);
+    this.route.navigate(['bookinstantly']);
     console.log(this.time_selected);
   }
 }
