@@ -1505,9 +1505,9 @@ export class DataService {
       'code': 'ZW'
     }
   ];
-  emailVerification = [{
+  emailVerification = [/*{
     para: 'Control the emails you want to get - all of them, just the important stuff or the bare minimum.you can always unsubscribe from the bottom of email.',
-  },
+  },*/
   {
     email: 'Enappd@Enappd.com.',
     toggle: false,
@@ -1520,11 +1520,11 @@ export class DataService {
     head: 'Ride offerings',
     toggle: true
 
-  }, {
+  }/*, {
     head: 'Promotions',
     toggle: true,
     des: 'I want to receive news, updates and offers from Carpool.'
-  }];
+  }*/];
   cards = [{
     'iconName': 'arrow-dropdown-circle',
     'iconName2': 'pin',

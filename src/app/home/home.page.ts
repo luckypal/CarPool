@@ -8,6 +8,7 @@
  */import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-home',
@@ -60,7 +61,7 @@ export class HomePage implements OnInit, OnDestroy {
         this.pick = this.offerRideDetails.pickup;
         this.des = this.offerRideDetails.destinaton;
         this.journeyDate = this.offerRideDetails.date;
-        this.journeyTime = this.offerRideDetails.time;
+        this.journeyTime = moment(this.offerRideDetails.time).format('HH:mm');
         this.seatsAval = this.offerRideDetails.passenger;
         if (this.pick.length > 15 || this.des.length > 15) {
           this.pickSub = this.pick.substring(0, 15);

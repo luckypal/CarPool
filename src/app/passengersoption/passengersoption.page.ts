@@ -17,7 +17,7 @@ import { DataService } from '../data.service';
 })
 export class PassengersoptionPage implements OnInit {
   options: any;
-  placeholdeText = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. assumenda velit!';
+  placeholdeText = '';
   totalSeats: any;
   product = 0;
   passengerNo = '';
