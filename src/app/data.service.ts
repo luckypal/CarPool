@@ -188,9 +188,9 @@ export class DataService {
   {
     header: 'verification',
     icon: 'more',
-    headerText: 'Verify my id',
-    headerText1: 'Verify +91 123 325 452',
-    headerText2: 'verify my Email',
+    headerText: 'Verify ID',
+    headerText1: 'Verify Mobile Number',
+    headerText2: 'Verify E-Mail',
     verifyId: [{ name: 'passport' }, { name: 'passport' }, { name: 'passport' }],
     verifyNo: [{
       icon: 'phone',

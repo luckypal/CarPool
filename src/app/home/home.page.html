@@ -20,7 +20,7 @@
   [ngStyle]="{'background':'url(../../assets/image/login.jpg)','background-size':'cover','background-position':'center'}">
 
   <div *ngIf="segmenValue == 'current'  &&  service.cardDetails" padding>
-    <ion-list-header text-uppercase>Your offered rides</ion-list-header>
+    <ion-list-header color="secondary" text-uppercase>Your offered rides</ion-list-header>
     <ion-card (click)="gotoeditRide()" class="rideComplete">
       <ion-item>
         <ion-label>
@@ -30,7 +30,7 @@
       </ion-item>
       <ion-item>
         <ion-icon slot="end" name="more" expand="icon-only"></ion-icon>
-        <p>{{seatsAval}} seats available</p>
+        <p>{{seatsAval}} Seats available</p>
       </ion-item>
     </ion-card>
   </div>

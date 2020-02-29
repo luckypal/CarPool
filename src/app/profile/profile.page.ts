@@ -32,19 +32,19 @@ export class ProfilePage implements OnInit {
       this.route.navigate(['editprofile']);
     } else if (link === 'add a car') {
       this.route.navigate(['addcar']);
-    } else if (link === 'Verify my id') {
+    } else if (link === 'Verify ID') {
       this.route.navigate(['verifyid']);
     }
   }
   goforPreferences(link: any) {
     if (link === 'Add my preferences') {
       this.route.navigate(['preferences']);
-    } else if (link === 'Verify +91 123 325 452') {
+    } else if (link === 'Verify Mobile Number') {
       this.route.navigate(['verifyphone']);
     }
   }
   goforEmailVerification(link: any) {
-    if (link === 'verify my Email') {
+    if (link === 'Verify E-Mail') {
       this.route.navigate(['verifyemail']);
     }
   }

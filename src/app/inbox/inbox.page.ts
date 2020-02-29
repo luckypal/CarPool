@@ -22,14 +22,14 @@ export class InboxPage implements OnInit {
       iconUrl: '../../assets/success.png',
     },
     {
-      title: 'Parmotion',
-      subtitle: 'Inivite friend - Get 3 couponse each',
+      title: 'Promotion',
+      subtitle: 'Inivite friend - Get 3 Coupons each',
       iconUrl: '../../assets/coupon.png',
     },
 
     {
-      title: 'Parmotion',
-      subtitle: 'Inivite friend - Get 3 couponse each',
+      title: 'Promotion',
+      subtitle: 'Inivite friend - Get 3 Coupons each',
       iconUrl: '../../assets/coupon.png',
     },
 
