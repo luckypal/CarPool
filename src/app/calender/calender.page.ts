@@ -5,7 +5,9 @@
  *
  * This source code is licensed as per the terms found in the
  * LICENSE.md file in the root directory of this source tree.
- */import { Component, OnInit } from '@angular/core';
+ */
+import * as moment from 'moment';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -15,11 +17,11 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./calender.page.scss'],
 })
 export class CalenderPage implements OnInit {
-  public myDate: any = '05-03-2019';
+  public myDate: any = '';
   public mydate;
   public timeSelected = '04:10 AM';
   public datePickerObj: any = {
-    fromDate: new Date('2019-01-08'),
+    fromDate: new Date('2020-01-08'),
     toDate: new Date('2030-12-28'),
     showTodayButton: true,
     closeOnSelect: true,
@@ -39,6 +41,7 @@ export class CalenderPage implements OnInit {
   date_Selected: any;
   tripValue: any;
   constructor(public service: DataService, public route: Router, public actvRoute: ActivatedRoute) {
+    this.myDate = moment(Date()).format(this.datePickerObj.dateFormat);
     this.actvRoute.params.subscribe(params => {
       this.tripValue = params.value;
     });

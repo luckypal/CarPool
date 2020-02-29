@@ -6,6 +6,7 @@
  * This source code is licensed as per the terms found in the
  * LICENSE.md file in the root directory of this source tree.
  */
+import * as moment from 'moment';
 import { Component, OnInit, NgZone } from '@angular/core';
 import { DataService } from '../data.service';
 import { ModalController, AlertController } from '@ionic/angular';
@@ -31,13 +32,7 @@ export class FindridePage implements OnInit {
   constructor(public service: DataService, public modalCtrl: ModalController, public ngZone: NgZone, public route: Router, public alertController: AlertController) {
     this.pickup = true;
     const today = new Date();
-
-    var ampm = today.getHours() >= 12 ? 'pm' : 'am';
-    var hours = today.getHours() % 12;
-    hours = hours ? hours : 12;
-    const time = `${hours}:${today.getMinutes()} ${ampm}`;
-    // const time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
-    this.rightTime = time;
+    this.rightTime = moment(Date()).format('HH:mm');
   }
 
   ngOnInit() {
@@ -50,11 +45,7 @@ export class FindridePage implements OnInit {
           this.date = filter.replace("-", "/").replace("-", "/");
         });
         this.service.timeForFindride.subscribe(filter => {
-          const date = new Date(filter);
-          var ampm = date.getHours() >= 12 ? 'pm' : 'am';
-          var hours = date.getHours() % 12;
-          hours = hours ? hours : 12;
-          this.time = `${hours}:${date.getMinutes()} ${ampm}`;
+          this.time = moment(filter).format('HH:mm');
         });
       }, 2000);
     }

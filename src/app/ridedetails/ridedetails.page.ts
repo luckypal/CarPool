@@ -44,7 +44,6 @@ export class RidedetailsPage implements OnInit {
   }
   goforSeats() {
     this.service.totalFare = this.rideData.cost;
-    // this.route.navigate(['totalpassengers', { value: 'ticketBook' }]);
-    this.route.navigate(['checkbooking']);
+    this.route.navigate(['totalpassengers', { value: 'ticketBook' }]);
   }
 }
