@@ -17,7 +17,7 @@ import { DataService } from '../data.service';
 //Unused
 export class TotalpassengersPage implements OnInit {
   headerText = 'How many passengers can you take?';
-  headerTextticketBook = 'How many passengers would you ride?';
+  headerTextticketBook = 'Number of passengers?';
   product = 0;
   show: boolean;
   passengerNo = '';
